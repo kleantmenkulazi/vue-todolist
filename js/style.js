@@ -12,11 +12,11 @@ createApp({
                     done: true,
                 },
                 {
-                    text: "Preferibilmente senza piangere",
+                    text: "se possibile",
                     done: true,
                 },
                 {
-                    text: "Cheering up!",
+                    text: "Festeggiare",
                     done: true,
                 },
             ],
