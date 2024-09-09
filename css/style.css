@@ -1,7 +1,42 @@
- * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    font-family: sans-serif;
-} 
+main {
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+#app {
+    border-radius: 20px;
+    padding: 50px;
+    margin: 0 auto;
+    width: 80%;
+    background-image: url('https://it.freepik.com/vettori-gratuito/sfondo-di-luci-al-neon-realistico_13294945.htm#fromView=keyword&page=1&position=0&uuid=91d80005-df39-4001-8327-4d5e5b610cf0&from_element=home_trends');
+    background-size: cover;
+}
+.card {
+    margin: 0 auto;
+    box-shadow: blue 10px;
+}
+
+.myBadge {
+    width: 140px;
+    padding: 3px 10px;
+    display: inline-block;
+    color: rgb(255, 232, 232);
+    background-color: blue;
+    border-radius: none;
+}
+
+.btn {
+    color: blue;
+    border-color: blue;
+}
+
+.btn:hover {
+    color: white;
+    background-color: blue;
+}

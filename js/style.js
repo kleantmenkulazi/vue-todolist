@@ -1,11 +1,19 @@
-// console.log
+
 
 const { createApp } = Vue
 
 createApp({
+
     data() {
         return {
-            message: 'Hello Vue!'
+            todos: {
+                text: "Finire l'esercizio",
+                done: "true"
+            }
         }
+    },
+
+    method() {
+
     }
 }).mount('#app')
