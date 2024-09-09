@@ -1,5 +1,3 @@
-
-
 const { createApp } = Vue
 
 createApp({
@@ -9,15 +7,15 @@ createApp({
             todos: [
                 {
                     text: "Finire l'esercizio",
-                    done: true,
+                    done: false,
                 },
                 {
-                    text: "se possibile",
-                    done: true,
+                    text: "Preferibilmente senza piangere",
+                    done: false,
                 },
                 {
-                    text: "Festeggiare",
-                    done: true,
+                    text: "Cheering up!",
+                    done: false,
                 },
             ],
             inputTodo: ""
@@ -26,12 +24,20 @@ createApp({
 
     methods: {
         deleteTodo(i) {
-            
+            /* 
+            "splice" permette di eliminare un elemento. 
+            Nelle parentesi vuole l'indice dell'elemento da eliminare, quanti elementi eliminare a partire dall'indice.
+            */
             this.todos.splice(i, 1);
         },
         createTodo() {
-            this.todos.push(this.inputTodo)
-        }
+            // pusho la nuova task se l'input dell'utente non è vuoto.
+            // elimino la possibilità di aggiungere degli spazi
+            if (this.inputTodo.trim() != '') {
+                this.todos.push(this.inputTodo);
+                this.inputTodo = '';
+            };
+        },
     },
 
 }).mount('#app')
